@@ -1,5 +1,7 @@
 const addBtn = document.getElementById("add");
 
+const notes = JSON.parse(localStorage.getItem("notes"));
+
 addBtn.addEventListener("click", () => addNewNote());
 
 function addNewNote(text = "") {
